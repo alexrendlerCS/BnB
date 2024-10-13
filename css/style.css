@@ -37,6 +37,7 @@
      font-size: 15px;
      font-family: 'Dosis', sans-serif;
      line-height: 1.80857;
+     background-color: #210F0F;
 }
  a {
      color: #1f1f1f;
@@ -55,7 +56,7 @@
      padding: 0 0 10px 0;
      font-weight: normal;
      line-height: 120% !important;
-     color: #1f1f1f;
+     color: #ffffff;
      margin: 0 
 }
  h1 {
@@ -77,7 +78,7 @@
      font-size: 13px 
 }
  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-     color: #212121;
+     color: #ffffff;
      text-decoration: none!important;
      opacity: 1 
 }
@@ -151,7 +152,7 @@
      height: 32px;
      text-align: center;
      line-height: 5px;
-     background: #912f59;
+     background: #20110e;
      color: #ffffff;
      cursor: pointer;
      border: 0;
@@ -347,6 +348,9 @@ nav.navbar {
          padding: 30px 15px;
          font-weight: 600;
     }
+    nav.navbar .navbar-brand img.logo {
+        margin-left: 30px; 
+    }
      nav.navbar .navbar-brand{
          margin-top: 0;
     }
@@ -406,6 +410,17 @@ nav.navbar {
          position: relative;
          top: -2px;
     }
+
+    nav.navbar {
+        height: 125px; /* Smaller navbar height for mobile */
+    }
+
+    nav.navbar .navbar-brand img.logo {
+        margin-left: 90px; /* Adjust the value as needed */
+        width: 300px!important; /* Increase the width */
+        height: 90px;
+        margin-top: -100px;
+    }
      nav.navbar .navbar-brand img.logo{
          width: 160px;
     }
@@ -436,6 +451,127 @@ nav.navbar {
          padding-top: 10px;
     }
 }
+/* New Media Query for screens under 992px */
+@media (max-width: 991px) { /* You can adjust the max-width as needed */
+    nav.navbar .navbar-brand img.logo {
+        margin-top: 10px; /* Adjust this value to lower the logo */
+        margin-right: 125px;
+    }
+}
+
+/* New Media Query for screens under 992px */
+@media (max-width: 768px) { /* You can adjust the max-width as needed */
+    nav.navbar .navbar-brand img.logo {
+        width: 250px!important; /* Increase the width */
+        height: 75px;
+        margin-top: -75px; /* Adjust this value to lower the logo */
+        margin-left: 150px;
+    }
+}
+
+/* New Media Query for screens under 992px */
+@media (max-width: 520px) { /* You can adjust the max-width as needed */
+    nav.navbar .navbar-brand img.logo {
+        width: 250px!important; /* Increase the width */
+        margin-top: -100px;
+        height: 75px;
+    }
+}
+
+.made-to-order {
+    margin: 50px 0; /* Add margin for spacing */
+    text-align: center; /* Center the text */
+    background-color: #210F0F;
+}
+
+.made-to-order h2 {
+    font-size: 24px; /* Adjust header size */
+    color: #ffffff;
+}
+
+.made-to-order p {
+    font-size: 16px; /* Adjust paragraph size */
+    color: #cfcfcf; /* Change text color */
+    margin-bottom: -50px
+}
+
+
+/* Banner Section Styling */
+.banner {
+    background-color: #210f0f;
+    background-image: url('../images/banner-01.jpg'); /* Ensure the correct path */
+    background-size: contain; /* Ensures the whole image is visible */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image both vertically and horizontally */
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Remove potential margin around the section */
+    padding: 0; /* Remove padding to avoid space between navbar and banner */
+    box-sizing: border-box; /* Ensures consistent padding handling */
+}
+
+/* Container Styling inside Banner */
+.banner .container {
+    padding-top: 60px; /* Adjust this value to create space below the navbar if needed */
+}
+
+/* Text inside the Banner */
+.banner-text {
+    color: #aeb1a8;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Button Styling in Banner */
+.banner-btn {
+    background-color: #281511;
+    color: #aeb1a8;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.banner-btn:hover {
+    background-color: #3a1e1e;
+    color: #ffffff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .banner {
+        background-size: contain; /* Keeps the image fully visible */
+        height: 100vh; /* Full height for 1024px screens */
+    }
+
+    .banner-text {
+        font-size: 1.3rem; /* Slightly smaller text for better fit */
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        background-size: contain; /* Keeps the image fully visible */
+        height: 100vh; /* Full height for 992px screens */
+    }
+
+    .banner-text {
+        font-size: 1.1rem; /* Further reduce text size for mobile */
+    }
+
+    .banner-btn {
+        padding: 8px 20px; /* Adjust button size for mobile */
+        font-size: 1rem; /* Smaller font for the button */
+    }
+}
+
+
 /* Navbar Inverse =================================*/
  nav.navbar.navbar-inverse{
      background-color: #222;
@@ -650,14 +786,13 @@ nav.navbar {
      vertical-align: middle;
      -webkit-transform: perspective(1px) translateZ(0);
      transform: perspective(1px) translateZ(0);
-     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     box-shadow: 0 0 1px rgba(15, 2, 2, 0);
      position: relative;
-     background: #641f3e;
+     background: #1E0804;
      -webkit-transition-property: color;
      transition-property: color;
      -webkit-transition-duration: 0.3s;
      transition-duration: 0.3s;
-     border-radius: 0;
      box-shadow: none;
 }
  .hvr-hover::after {
@@ -668,8 +803,7 @@ nav.navbar {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #b65681;
-	border-radius: 100%;
+	background: #130402;
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	-webkit-transition-property: transform;
@@ -1049,7 +1183,7 @@ nav.navbar {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(334, 46%, 55%, 0.61); /* semi-transparent pink */
+    background-color: hsla(80, 5%, 68%, 0.61); /* semi-transparent pink */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -1079,10 +1213,11 @@ nav.navbar {
      text-transform: uppercase;
 }
  .why-text{
-     background: #f5f5f5;
+     background: #110707;
      padding: 15px;
 }
  .why-text h4{
+     color: #ffffff;
      font-size: 16px;
      font-weight: 700;
      padding-bottom: 0px;
@@ -1882,6 +2017,7 @@ nav.navbar {
 }
  .shop-box-inner{
      padding: 70px 0px;
+     background-color: #210F0F;
 }
  .search-product {
      position: relative;
@@ -2262,7 +2398,7 @@ nav.navbar {
 }
  .gr-total h5 {
      font-weight: 700;
-     color: #912f59;
+     color: #ffffff;
      font-size: 18px;
      margin: 0px;
      padding: 0px;
@@ -2574,6 +2710,11 @@ nav.navbar {
  .help-block ul li{
      color: #fff;
 }
+
+.white-text {
+    color: #ffffff!important; /* Change text color to white */
+}
+
  .shop-detail-box-main{
      padding: 70px 0px;
 }
@@ -2610,12 +2751,12 @@ nav.navbar {
      cursor: pointer;
 }
  .single-product-details h2{
-     color: #000000;
+     color: #ffffff;
      font-weight: 700;
      font-size: 24px;
 }
  .single-product-details h5 {
-     color: #912f59;
+     color: #ffffff;
      font-weight: 700;
      font-size: 18px;
 }

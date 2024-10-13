@@ -14,8 +14,9 @@
          width: 100%;
     }
      .navbar-light .navbar-toggler{
-         border-color: #b0b435;
-         color: #010101;
+         border-color: #979993;
+         background-color: #aeb1a8;
+         color: #454644;
          border-radius: 0px;
          margin-right: 7px;
          padding-top: 6px;
@@ -79,8 +80,9 @@
          width: 80%;
     }
      .navbar-light .navbar-toggler{
-         border-color: #b0b435;
-         color: #010101;
+         border-color: #979993;
+         background-color: #aeb1a8;
+         color: #454644;
          border-radius: 0px;
          margin-right: 7px;
          padding-top: 6px;
@@ -206,9 +208,11 @@
 }
  @media only screen and (min-width: 280px) and (max-width: 599px) {
      .navbar-light .navbar-toggler{
-         border-color: #b0b435;
-         color: #010101;
+         border-color: #979993;
+         background-color: #aeb1a8;
+         color: #454644;
          border-radius: 0px;
+         margin-top: 50px;
          margin-right: 7px;
          padding-top: 6px;
 		 padding-bottom: 6px;
