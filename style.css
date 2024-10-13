@@ -416,7 +416,6 @@ nav.navbar {
     }
 
     nav.navbar .navbar-brand img.logo {
-        margin-left: 90px; /* Adjust the value as needed */
         width: 300px!important; /* Increase the width */
         height: 90px;
         margin-top: -100px;
