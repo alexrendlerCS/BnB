@@ -531,7 +531,7 @@ nav.navbar {
 @media (max-width: 991px) { /* You can adjust the max-width as needed */
     nav.navbar .navbar-brand img.logo {
         margin-top: -50px; /* Adjust this value to lower the logo */
-        margin-right: 275px;
+        margin-right: 300px;
     }
 }
 
