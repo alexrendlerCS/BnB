@@ -416,7 +416,6 @@ nav.navbar {
     }
 
     nav.navbar .navbar-brand img.logo {
-        margin-left: 90px; /* Adjust the value as needed */
         width: 300px!important; /* Increase the width */
         height: 90px;
         margin-top: -100px;
@@ -451,11 +450,107 @@ nav.navbar {
          padding-top: 10px;
     }
 }
+
+/* General styling for the intro section */
+.intro-section {
+    padding: 40px 0;
+    background-color: #210f0f; /* Dark background color */
+}
+
+/* Styling for the image */
+.intro-icon {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the intro text */
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #aeb1a8; /* Light text color */
+    text-align: center;
+}
+
+/* Styling for the full-width image */
+.full-width-image {
+    width: 100%; /* Makes the image span the full width of the screen */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin-top: 20px; /* Adds spacing between the paragraph and image */
+}
+
+/* Optional: Remove container padding for the image to span edge-to-edge */
+.intro-section .container {
+    padding: 0;
+}
+
+/* Styling for the side images with text in the middle */
+.side-images-row {
+    display: flex;
+    justify-content: space-between; /* Space out images and center the text */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.side-image {
+    width: 30%; /* Adjust size to make room for text */
+    height: auto;
+}
+
+.center-text {
+    width: 35%; /* Allocate space for the text */
+    text-align: center; /* Center the text within its box */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #aeb1a8; /* Matches the text color from the rest of the page */
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+/* Responsive Styles for Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    .side-images-row {
+        gap: 5px;
+    }
+
+    .side-image {
+        width: 20%;  /* Shrink side images */
+    }
+
+    .center-text {
+        width: 55%;  /* Expand text for readability */
+    }
+}
+
+/* Responsive Styles for Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .side-images-row {
+        flex-wrap: wrap;  /* Allow elements to wrap */
+    }
+
+    .side-image {
+        width: 100%;  /* Images take full width on smaller screens */
+        max-width: none; /* Removes max width limit */
+    }
+
+    .center-text {
+        width: 100%;  /* Text takes full width on smaller screens */
+        margin-top: 10px;
+    }
+
+    .intro-icon {
+        width: 60px;  /* Shrinks icon for small screens */
+    }
+}
+
+
 /* New Media Query for screens under 992px */
 @media (max-width: 991px) { /* You can adjust the max-width as needed */
     nav.navbar .navbar-brand img.logo {
-        margin-top: 10px; /* Adjust this value to lower the logo */
-        margin-right: 125px;
+        margin-top: -50px; /* Adjust this value to lower the logo */
+        margin-right: 300px;
     }
 }
 
@@ -465,7 +560,7 @@ nav.navbar {
         width: 250px!important; /* Increase the width */
         height: 75px;
         margin-top: -75px; /* Adjust this value to lower the logo */
-        margin-left: 150px;
+        margin-left: 100px;
     }
 }
 
@@ -475,6 +570,7 @@ nav.navbar {
         width: 250px!important; /* Increase the width */
         margin-top: -100px;
         height: 75px;
+        margin-right: 100px;
     }
 }
 
