@@ -509,22 +509,41 @@ nav.navbar {
     padding: 0 10px; /* Add padding for better spacing */
 }
 
-/* Optional: Make layout responsive for smaller screens */
+/* Responsive Styles for Medium Screens (Tablets) */
 @media (max-width: 768px) {
     .side-images-row {
-        flex-direction: column; /* Stack images and text vertically */
+        gap: 5px;
     }
 
-    .side-image,
+    .side-image {
+        width: 20%;  /* Shrink side images */
+    }
+
     .center-text {
-        width: 80%; /* Expand elements on smaller screens */
-        margin-bottom: 15px; /* Add space between stacked elements */
+        width: 55%;  /* Expand text for readability */
     }
 }
 
+/* Responsive Styles for Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .side-images-row {
+        flex-wrap: wrap;  /* Allow elements to wrap */
+    }
 
+    .side-image {
+        width: 100%;  /* Images take full width on smaller screens */
+        max-width: none; /* Removes max width limit */
+    }
 
+    .center-text {
+        width: 100%;  /* Text takes full width on smaller screens */
+        margin-top: 10px;
+    }
 
+    .intro-icon {
+        width: 60px;  /* Shrinks icon for small screens */
+    }
+}
 
 
 /* New Media Query for screens under 992px */
@@ -551,6 +570,7 @@ nav.navbar {
         width: 250px!important; /* Increase the width */
         margin-top: -100px;
         height: 75px;
+        margin-right: 100px;
     }
 }
 
