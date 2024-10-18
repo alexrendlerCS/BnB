@@ -511,6 +511,9 @@ nav.navbar {
 
 /* Responsive Styles for Medium Screens (Tablets) */
 @media (max-width: 768px) {
+    .intro-text {
+        padding: 0 5%;
+    }
     .side-images-row {
         gap: 5px;
     }
@@ -520,6 +523,7 @@ nav.navbar {
     }
 
     .center-text {
+        padding: 0 5%;
         width: 55%;  /* Expand text for readability */
     }
 }
