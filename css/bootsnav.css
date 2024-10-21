@@ -1022,7 +1022,7 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:
     }
     
     nav.navbar.bootsnav .navbar-nav {
-        float: none !important;
+        float: left !important;
         padding-left: 30px;
         padding-right: 30px;
         margin: 0px -15px;
