@@ -511,6 +511,9 @@ nav.navbar {
 
 /* Responsive Styles for Medium Screens (Tablets) */
 @media (max-width: 768px) {
+    .intro-text {
+        padding: 0 5%;
+    }
     .side-images-row {
         gap: 5px;
     }
@@ -520,6 +523,7 @@ nav.navbar {
     }
 
     .center-text {
+        padding: 0 5%;
         width: 55%;  /* Expand text for readability */
     }
 }
@@ -973,6 +977,9 @@ nav.navbar {
  .top-search input.form-control{
      color: #ffffff;
 }
+
+
+
 /*------------------------------------------------------------------ Slider -------------------------------------------------------------------*/
  .cover-slides{
      height: 100vh;
@@ -1243,10 +1250,10 @@ nav.navbar {
 }
  .filter-button-group button{
 }
- .products-single {
-     overflow: hidden;
-     position: relative;
-     margin-bottom: 30px;
+ /* Optional: Ensure consistency in the parent container */
+.products-single {
+    overflow: hidden;  /* Prevent content overflow */
+    margin-bottom: 20px;  /* Add spacing between images */
 }
  .products-single .box-img-hover{
      overflow: hidden;
@@ -1266,10 +1273,11 @@ nav.navbar {
     overflow: hidden;
 }
 
+/* Ensure images are uniform in size and aligned */
 .basket-img-hover img {
-    display: block;
-    width: 100%;
-    height: auto;
+    width: 100%;  /* Make the image fill the parent container */
+    height: 500px;  /* Set a consistent height */
+    border-radius: 2px;  /* Optional: Add rounded corners */
 }
 
 .basket-img-hover::after {
