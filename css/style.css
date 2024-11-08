@@ -600,7 +600,9 @@ nav.navbar {
 /* Banner Section Styling */
 .banner {
     background-color: #210f0f;
-    background-image: url('../images/banner-01.jpg'); /* Ensure the correct path */
+    background-image: 
+        url('../images/banner-01.jpg'),         /* Main banner image */
+        url('../images/banner-bg.jpg');
     background-size: contain; /* Ensures the whole image is visible */
     background-repeat: no-repeat;
     background-position: center; /* Center the image both vertically and horizontally */
