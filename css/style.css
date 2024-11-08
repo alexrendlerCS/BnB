@@ -649,6 +649,7 @@ nav.navbar {
 /* Media Queries for Responsive Design */
 @media (max-width: 1024px) {
     .banner {
+        margin-top: -50px;
         background-size: contain; /* Keeps the image fully visible */
         height: 100vh; /* Full height for 1024px screens */
     }
