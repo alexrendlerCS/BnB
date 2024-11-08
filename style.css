@@ -453,7 +453,7 @@ nav.navbar {
 
 /* General styling for the intro section */
 .intro-section {
-    padding: 40px 0;
+    padding: 80px 0;
     background-color: #210f0f; /* Dark background color */
 }
 
@@ -473,6 +473,7 @@ nav.navbar {
     line-height: 1.6;
     color: #aeb1a8; /* Light text color */
     text-align: center;
+    padding: 0 150px;
 }
 
 /* Styling for the full-width image */
@@ -666,7 +667,6 @@ nav.navbar {
     }
 
     .banner-btn {
-        padding: 8px 20px; /* Adjust button size for mobile */
         font-size: 1rem; /* Smaller font for the button */
     }
 }
