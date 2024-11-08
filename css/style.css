@@ -617,7 +617,7 @@ nav.navbar {
 
 /* Container Styling inside Banner */
 .banner .container {
-    padding-top: 60px; /* Adjust this value to create space below the navbar if needed */
+    padding-top: 0px; /* Adjust this value to create space below the navbar if needed */
 }
 
 /* Text inside the Banner */
@@ -1278,7 +1278,7 @@ nav.navbar {
 /* Ensure images are uniform in size and aligned */
 .basket-img-hover img {
     width: 100%;  /* Make the image fill the parent container */
-    height: 500px;  /* Set a consistent height */
+    height: 350px;  /* Set a consistent height */
     border-radius: 2px;  /* Optional: Add rounded corners */
 }
 
