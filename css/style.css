@@ -628,10 +628,31 @@ nav.navbar {
     text-align: center;
 }
 
+.shop-now-btn {
+    display: inline-block; /* Makes it behave like a button */
+    background-color: #a7ae97; /* New background color */
+    color: #281511; /* Text color for contrast */
+    padding: 10px 20px; /* Adjusts inner spacing */
+    font-size: 16px; /* Adjusts font size */
+    font-weight: bold; /* Makes the font bold */
+    text-align: center; /* Centers the text */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px; /* Adds rounded corners */
+    border: 2px solid transparent; /* Adds a border for hover effect */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
+}
+
+.shop-now-btn:hover {
+    background-color: #64695a; /* Darker shade on hover */
+    border-color: #a7ae97; /* Adds a border on hover */
+    color: #281511; /* Keeps text readable */
+}
+
+
 /* Button Styling in Banner */
 .banner-btn {
-    background-color: #281511;
-    color: #aeb1a8;
+    background-color: #a7ae97;
+    color: #a7ae97;
     padding: 10px 30px;
     font-size: 1.2rem;
     text-decoration: none;
@@ -642,8 +663,8 @@ nav.navbar {
 
 /* Button Hover Effect */
 .banner-btn:hover {
-    background-color: #3a1e1e;
-    color: #ffffff;
+    background-color: #7a806e;
+    color: #281511;
 }
 
 /* Media Queries for Responsive Design */
