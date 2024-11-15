@@ -1148,7 +1148,7 @@ nav.navbar {
     Start Newsletter CSS
 ===========================*/  
 .newsletter{
-    background:#281511;
+    background:#a7ae97;
     padding: 30px 0;
     width: 100%;
 }
@@ -1175,7 +1175,7 @@ nav.navbar {
 }
 
 .newsletter .subscribe-text p {
-    color: rgb(226, 226, 226);
+    color: #1e0804; ;
 }
 
 .newsletter .subscribe-text p{}
@@ -1234,6 +1234,15 @@ nav.navbar {
 }
 .newsletter .btn:before{
     border-radius: 5px;
+}
+.newsletter .subscribe-text h6 {
+    font-size: 28px;
+    color: #1e0804; /* Updated color */
+    font-weight: bold;
+}
+
+.newsletter .subscribe-text p {
+    color: #1e0804; /* Updated color */
 }
 /*=========================
     End Newsletter CSS
