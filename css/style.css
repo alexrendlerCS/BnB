@@ -1174,8 +1174,12 @@ nav.navbar {
     color:#ffffff;
 }
 
-.newsletter .subscribe-text p {
-    color: #1e0804; ;
+/* Newsletter text styling */
+.subscribe-text p {
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: Makes the text bold */
+    color: #ffffff; /* Ensure it's visible on a dark background */
+    line-height: 1.5; /* Optional: Adjust line spacing for readability */
 }
 
 .newsletter .subscribe-text p{}
@@ -1704,6 +1708,8 @@ nav.navbar {
 	display: block;
 	float: none;
 }
+
+
 
 .newsletter-box{
 	margin-top: 15px;
