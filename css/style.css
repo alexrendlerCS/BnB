@@ -34,7 +34,7 @@
 -------------------------------------------------------------------*/
  body {
      color: #666666;
-     font-size: 15px;
+     font-size: 14px;
      font-family: 'Dosis', sans-serif;
      line-height: 1.80857;
      background-color: #210F0F;
@@ -500,6 +500,15 @@ nav.navbar {
     width: 30%; /* Adjust size to make room for text */
     height: auto;
 }
+
+/* Styling for the Gallery Image */
+.gallery-image {
+    max-width: 60%; /* Ensure the image scales within its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Removes any inline spacing issues */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 
 .center-text {
     width: 35%; /* Allocate space for the text */
@@ -1910,7 +1919,53 @@ nav.navbar {
      color: #1e0804;
 }
 /*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
+
+/* Custom Image Section */
+.custom-image-section {
+    display: flex; /* Centers the content horizontally and vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 200px; /* Set the height for the section */
+    background-color: #a5ae95; /* Fallback color in case the image fails to load */
+    width:  500;
+    margin: 0px 0; /* Adds spacing above and below the section */
+    position: relative; /* Allows for layered styling if needed */
+    overflow: hidden; /* Ensures no content overflows */
+}
+
+/* Image Styling */
+.custom-image {
+    margin-top: 50px;
+    width: 100%; /* Ensures the image fills the width */
+    height: 150%; /* Ensures the image fills the height */
+    object-fit: contain; /* Ensures the entire image is visible */
+    display: block; /* Centers the image inside the container */
+    object-position: center; /* Centers the image in the container */
+}
+
+/* Default: Full-size screen (Desktop) */
+.custom-image-section {
+    display: none; /* Hide the custom image section by default */
+}
+
+.all-title-box {
+    display: block; /* Show the title box by default */
+}
+
+/* Mobile-sized screens */
+@media screen and (max-width: 768px) {
+    .custom-image-section {
+        display: flex; /* Show the custom image section on smaller screens */
+    }
+
+    .all-title-box {
+        display: none; /* Hide the title box on smaller screens */
+    }
+}
+
+
  .all-title-box{
+    height: 400px; /* Set the exact height */
      background: url("../images/background-01.jpg") no-repeat center center;
      -webkit-background-size: cover;
      -moz-background-size: cover;
