@@ -217,7 +217,9 @@ nav.navbar {
      border: none;
      padding: 0px;
      border-radius: 0px;
+
 }
+
  .right-phone-box{
      float: left;
      margin-right: 10px;
@@ -816,7 +818,7 @@ nav.navbar {
          border-right: solid 1px #303030;
     }
      nav.navbar.navbar-inverse.navbar-transparent.dark{
-         background-color: rgba(0,0,0,0.3);
+         background-color: rgb(0, 0, 0);
          border-bottom: solid 1px #999;
     }
      nav.navbar.navbar-inverse.navbar-transparent.dark .attr-nav{
